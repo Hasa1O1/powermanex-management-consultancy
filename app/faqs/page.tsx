@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { HelpCircle, Phone, Mail, MessageCircle } from 'lucide-react'
+import { HelpCircle, Phone, Mail, MessageCircle, Users, Building, Shield } from 'lucide-react'
 import Link from 'next/link'
 import { createWhatsAppLink, createMailtoLink } from '@/lib/utils'
 
