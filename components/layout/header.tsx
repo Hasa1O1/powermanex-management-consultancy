@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Phone, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -25,17 +26,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-10 h-10 bg-brand-white border-2 border-brand-black rounded-lg">
-              <div className="w-6 h-6 bg-brand-red rounded-sm transform rotate-45"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold font-heading text-brand-black">
-                POWER&apos;MANEX
-              </span>
-              <span className="text-xs text-brand-gray -mt-1">
-                Management Consultancy
-              </span>
-            </div>
+            <Image 
+              src="/POWER'MANEX LOGO.jpeg" 
+              alt="Power'manex Management Consultancy Logo"
+              width={180}
+              height={60}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

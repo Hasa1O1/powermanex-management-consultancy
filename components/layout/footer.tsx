@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { createWhatsAppLink, createMailtoLink } from '@/lib/utils'
@@ -12,18 +13,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-3 mb-4">
-              <div className="flex items-center justify-center w-10 h-10 bg-brand-white border-2 border-brand-white rounded-lg">
-                <div className="w-6 h-6 bg-brand-red rounded-sm transform rotate-45"></div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold font-heading text-brand-white">
-                  POWER&apos;MANEX
-                </span>
-                <span className="text-xs text-brand-gray-light -mt-1">
-                  Management Consultancy
-                </span>
-              </div>
+            <Link href="/" className="inline-block mb-4">
+              <Image 
+                src="/POWER'MANEX LOGO.jpeg" 
+                alt="Power'manex Management Consultancy Logo"
+                width={180}
+                height={60}
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-brand-gray-light mb-6 max-w-md">
               Where strength meets strategy. We provide comprehensive business & HR solutions 
