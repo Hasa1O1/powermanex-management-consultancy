@@ -10,8 +10,6 @@ import {
   Shield, 
   CheckCircle,
   Award,
-  Phone,
-  Mail,
   MapPin,
   Gavel,
   GraduationCap,
@@ -89,20 +87,6 @@ export default function HomePage() {
                       className="object-contain max-w-full max-h-full"
                       priority
                     />
-                  </div>
-                  
-                  {/* Floating contact info overlay */}
-                  <div className="absolute bottom-4 left-4 right-4 bg-brand-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                    <div className="text-center">
-                      <div className="flex items-center justify-center gap-2 mb-2">
-                        <Phone className="w-4 h-4 text-brand-red" />
-                        <span className="font-semibold text-sm">+260 97 3737563</span>
-                      </div>
-                      <div className="flex items-center justify-center gap-2">
-                        <Mail className="w-4 h-4 text-brand-red" />
-                        <span className="text-xs text-brand-gray">powermanex31@gmail.com</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
