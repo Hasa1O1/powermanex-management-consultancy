@@ -27,7 +27,7 @@ export function createMailtoLink(email: string, subject?: string, body?: string)
   if (body) params.append('body', body)
   
   const queryString = params.toString()
-  return queryString ? `${email}?${queryString}` : email
+  return queryString ? `mailto:${email}?${queryString}` : `mailto:${email}`
 }
 
 export function slugify(text: string): string {
