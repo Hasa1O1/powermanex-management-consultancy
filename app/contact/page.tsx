@@ -20,7 +20,7 @@ import { createWhatsAppLink, createMailtoLink } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Power\'manex Management Consultancy. Contact us for HR services, company registration, compliance, and business solutions. Located in Lusaka, Zambia.',
+  description: 'Get in touch with Power\'manex Management Consultancy. Contact us for professional HR documents, labour mediation, employee sourcing, training, inspection support, and work permits. Located in Lusaka, Zambia.',
 }
 
 export default function ContactPage() {

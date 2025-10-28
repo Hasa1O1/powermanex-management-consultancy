@@ -29,7 +29,6 @@ A modern, responsive website for Power'manex Management Consultancy - a Zambian 
 ├── app/                    # Next.js 14 app directory
 │   ├── about/             # About page
 │   ├── contact/           # Contact page
-│   ├── faqs/              # FAQ page
 │   ├── services/          # Services page
 │   ├── api/               # API routes
 │   ├── globals.css        # Global styles and CSS variables
@@ -97,7 +96,6 @@ npm start
 1. **Contact Details**: Update in `components/layout/footer.tsx` and `app/contact/page.tsx`
 2. **Services**: Modify service descriptions in `app/services/page.tsx`
 3. **About Content**: Update company information in `app/about/page.tsx`
-4. **FAQs**: Add or modify questions in `app/faqs/page.tsx`
 
 ### Brand Colors
 

@@ -18,7 +18,7 @@
 ## What's Included
 
 ✅ **Complete Next.js 14 Website** with TypeScript
-✅ **All Pages**: Home, About, Services, FAQs, Contact
+✅ **All Pages**: Home, About, Services, Contact
 ✅ **Responsive Design** with Tailwind CSS
 ✅ **SEO Optimized** with metadata and structured data
 ✅ **Contact Forms** with validation

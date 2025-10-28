@@ -24,11 +24,12 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>
 
 const services = [
-  'Human Resource Services',
-  'Company Registration',
-  'Document Preparation',
-  'Statutory Compliance',
-  'License Registration',
+  'Legal HR Documents',
+  'Labour Mediation',
+  'Employee Sourcing',
+  'Workplace Training',
+  'Labour Inspection Support',
+  'Expert Work Permits',
   'General Inquiry'
 ]
 

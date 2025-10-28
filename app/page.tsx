@@ -9,14 +9,17 @@ import { Badge } from '@/components/ui/badge'
 import { 
   Users, 
   FileText, 
-  Building, 
   Shield, 
-  FileCheck, 
   CheckCircle,
   Award,
   Phone,
   Mail,
-  MapPin
+  MapPin,
+  Gavel,
+  GraduationCap,
+  Briefcase,
+  FileCheck,
+  Building
 } from 'lucide-react'
 import Link from 'next/link'
 import { createWhatsAppLink } from '@/lib/utils'
@@ -114,7 +117,7 @@ export default function HomePage() {
       <Section id="services" className="bg-gray-50">
         <SectionHeading 
           title="Our Services" 
-          subtitle="Comprehensive business solutions tailored for Zambian companies"
+          subtitle="Professional HR and legal solutions tailored for Zambian businesses"
           centered
         />
         
@@ -122,71 +125,95 @@ export default function HomePage() {
           <Card className="group hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
-                <Users className="w-6 h-6 text-brand-red" />
-              </div>
-              <CardTitle>Human Resource Services</CardTitle>
-              <CardDescription>
-                Complete HR solutions from recruitment to compliance
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Talent Sourcing & Recruitment</li>
-                <li>• Executive Search & Headhunting</li>
-                <li>• Employee Relations & HR Consulting</li>
-                <li>• Background Checks & Verification</li>
-                <li>• Labour Mediation & Grievance Resolution</li>
-              </ul>
-              <Button asChild variant="link" className="mt-4 p-0">
-                <Link href="/services#hr-services">Learn More →</Link>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="group hover:shadow-xl transition-all duration-300">
-            <CardHeader>
-              <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
-                <Building className="w-6 h-6 text-brand-red" />
-              </div>
-              <CardTitle>Company Registration</CardTitle>
-              <CardDescription>
-                Seamless business registration and setup
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Sole Proprietorship</li>
-                <li>• Partnership Registration</li>
-                <li>• Limited Liability Company</li>
-                <li>• Corporation Setup</li>
-                <li>• Guided Compliance Process</li>
-              </ul>
-              <Button asChild variant="link" className="mt-4 p-0">
-                <Link href="/services#company-registration">Learn More →</Link>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="group hover:shadow-xl transition-all duration-300">
-            <CardHeader>
-              <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
                 <FileText className="w-6 h-6 text-brand-red" />
               </div>
-              <CardTitle>Document Preparation</CardTitle>
+              <CardTitle>Legal HR Documents</CardTitle>
               <CardDescription>
-                Professional business documents and policies
+                Professionally drafted contracts, warning letters, and HR policies
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Company Profile Development</li>
-                <li>• Business Strategic Planning</li>
-                <li>• Contract Drafting</li>
-                <li>• Company Policy Creation</li>
-                <li>• Organizational Structure Design</li>
+                <li>• Employment Contracts</li>
+                <li>• Warning Letters & Disciplinary Documents</li>
+                <li>• HR Policies & Procedures</li>
+                <li>• Code of Conduct</li>
+                <li>• Ministry of Labour Attested</li>
               </ul>
               <Button asChild variant="link" className="mt-4 p-0">
-                <Link href="/services#document-preparation">Learn More →</Link>
+                <Link href="/services#legal-hr-documents">Learn More →</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="group hover:shadow-xl transition-all duration-300">
+            <CardHeader>
+              <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
+                <Gavel className="w-6 h-6 text-brand-red" />
+              </div>
+              <CardTitle>Labour Mediation</CardTitle>
+              <CardDescription>
+                Fair, compliant resolution of workplace disputes
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-sm text-brand-gray">
+                <li>• Grievance Resolution</li>
+                <li>• Conflict Mediation</li>
+                <li>• Legal Compliance</li>
+                <li>• Dispute Documentation</li>
+                <li>• Professional Representation</li>
+              </ul>
+              <Button asChild variant="link" className="mt-4 p-0">
+                <Link href="/services#labour-mediation">Learn More →</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="group hover:shadow-xl transition-all duration-300">
+            <CardHeader>
+              <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
+                <Users className="w-6 h-6 text-brand-red" />
+              </div>
+              <CardTitle>Employee Sourcing</CardTitle>
+              <CardDescription>
+                Free to Employers - Background-checked staff at no cost
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-sm text-brand-gray">
+                <li>• Thorough Background Checks</li>
+                <li>• Skill Verification</li>
+                <li>• No Hidden Fees</li>
+                <li>• Transparent Pricing</li>
+                <li>• Quality Candidates Guaranteed</li>
+              </ul>
+              <Button asChild variant="link" className="mt-4 p-0">
+                <Link href="/services#employee-sourcing">Learn More →</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="group hover:shadow-xl transition-all duration-300">
+            <CardHeader>
+              <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
+                <GraduationCap className="w-6 h-6 text-brand-red" />
+              </div>
+              <CardTitle>Workplace Training</CardTitle>
+              <CardDescription>
+                Custom sessions on compliance, performance, and HR systems
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-sm text-brand-gray">
+                <li>• Compliance Training</li>
+                <li>• Performance Management</li>
+                <li>• HR Systems Implementation</li>
+                <li>• Leadership Development</li>
+                <li>• On-site or Remote Delivery</li>
+              </ul>
+              <Button asChild variant="link" className="mt-4 p-0">
+                <Link href="/services#workplace-training">Learn More →</Link>
               </Button>
             </CardContent>
           </Card>
@@ -196,21 +223,21 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
                 <Shield className="w-6 h-6 text-brand-red" />
               </div>
-              <CardTitle>Statutory Compliance</CardTitle>
+              <CardTitle>Labour Inspection Support</CardTitle>
               <CardDescription>
-                Stay compliant with all regulatory requirements
+                Get inspection-ready. Zero penalties. Total peace of mind.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• PACRA Compliance</li>
-                <li>• ZRA Tax Registration</li>
-                <li>• NHIMA Registration</li>
-                <li>• NAPSA Compliance</li>
-                <li>• Labour Code Compliance</li>
+                <li>• Pre-Inspection Audit</li>
+                <li>• Document Preparation</li>
+                <li>• During Inspection Support</li>
+                <li>• Post-Inspection Follow-up</li>
+                <li>• Zero Penalties Guarantee</li>
               </ul>
               <Button asChild variant="link" className="mt-4 p-0">
-                <Link href="/services#statutory-compliance">Learn More →</Link>
+                <Link href="/services#inspection-support">Learn More →</Link>
               </Button>
             </CardContent>
           </Card>
@@ -218,23 +245,23 @@ export default function HomePage() {
           <Card className="group hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-red/20 transition-colors">
-                <FileCheck className="w-6 h-6 text-brand-red" />
+                <Briefcase className="w-6 h-6 text-brand-red" />
               </div>
-              <CardTitle>License Registration</CardTitle>
+              <CardTitle>Expert Work Permits</CardTitle>
               <CardDescription>
-                Professional license acquisition and renewal
+                Fast-tracked, error-free processing
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Money Lender Licenses</li>
-                <li>• Mining Licenses (All Types)</li>
-                <li>• Prospecting Permits</li>
-                <li>• Mineral Trading Permits</li>
-                <li>• License Renewal Services</li>
+                <li>• Complete Application Handling</li>
+                <li>• Fast Processing Times</li>
+                <li>• Renewal Services</li>
+                <li>• Error-Free Submissions</li>
+                <li>• All Permit Types</li>
               </ul>
               <Button asChild variant="link" className="mt-4 p-0">
-                <Link href="/services#license-registration">Learn More →</Link>
+                <Link href="/services#work-permits">Learn More →</Link>
               </Button>
             </CardContent>
           </Card>
@@ -277,36 +304,6 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold mb-3">Field-Based Teams</h3>
             <p className="text-brand-gray">
               Dedicated teams ready to support your business with inspection-ready documentation and compliance support.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Award className="w-8 h-8 text-brand-red" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Efficient Client Management</h3>
-            <p className="text-brand-gray">
-              Proactive client load management with real-time updates to ensure quality service for all clients.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <FileCheck className="w-8 h-8 text-brand-red" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Free Sign-Up</h3>
-            <p className="text-brand-gray">
-              Absolutely free sign-up for employers with background-checked staff delivered at no cost to you.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Building className="w-8 h-8 text-brand-red" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Zambia Focused</h3>
-            <p className="text-brand-gray">
-              Specialized knowledge of Zambian business regulations, labour laws, and compliance requirements.
             </p>
           </div>
         </div>

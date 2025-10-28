@@ -22,17 +22,17 @@ export const metadata: Metadata = {
     default: "Power'manex Management Consultancy - Where Strength Meets Strategy",
     template: "%s | Power'manex Management Consultancy"
   },
-  description: "Comprehensive business & HR solutions tailored for Zambian businesses. Labour compliance, company registration, HR services, and statutory compliance. PACRA & ZRA registered.",
+  description: "Professional HR and legal solutions for Zambian businesses. Legal HR documents, labour mediation, employee sourcing, workplace training, inspection support, and work permits. PACRA & ZRA registered.",
   keywords: [
     'management consultancy Zambia',
     'HR services Zambia',
-    'company registration Zambia',
-    'labour compliance Zambia',
-    'PACRA registration',
-    'ZRA compliance',
-    'business registration Zambia',
-    'HR consulting Lusaka',
-    'statutory compliance Zambia'
+    'legal HR documents Zambia',
+    'labour mediation Zambia',
+    'employee sourcing Zambia',
+    'workplace training Zambia',
+    'labour inspection support Zambia',
+    'work permits Zambia',
+    'HR consulting Lusaka'
   ],
   authors: [{ name: "Power'manex Management Consultancy" }],
   creator: "Power'manex Management Consultancy",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     url: 'https://powermanex.co.zm',
     siteName: "Power'manex Management Consultancy",
     title: "Power'manex Management Consultancy - Where Strength Meets Strategy",
-    description: "Comprehensive business & HR solutions tailored for Zambian businesses. Labour compliance, company registration, HR services, and statutory compliance.",
+    description: "Professional HR and legal solutions for Zambian businesses. Legal HR documents, labour mediation, employee sourcing, workplace training, inspection support, and work permits.",
     images: [
       {
         url: '/og-image.jpg',
@@ -134,21 +134,42 @@ export default function RootLayout({
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Human Resource Services"
+                      "name": "Legal HR Documents"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Company Registration"
+                      "name": "Labour Mediation"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Statutory Compliance"
+                      "name": "Employee Sourcing"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Workplace Training"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Labour Inspection Support"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Expert Work Permits"
                     }
                   }
                 ]
