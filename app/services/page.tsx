@@ -11,7 +11,6 @@ import {
   ShieldCheck,
   Briefcase,
   CheckCircle,
-  Phone,
   Clock,
   DollarSign
 } from 'lucide-react'
@@ -656,29 +655,6 @@ export default function ServicesPage() {
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </Section>
-
-      {/* CTA Section */}
-      <Section className="bg-brand-black text-brand-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl text-brand-gray-light mb-8">
-            Contact us today to discuss your specific business needs and get a tailored solution.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-brand-white text-brand-black hover:bg-brand-gray-light">
-              <Link href="/contact">Contact Us Today</Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <a href="tel:+260973737563" className="flex items-center gap-2">
-                <Phone className="w-5 h-5" />
-                Call +260 97 3737563
-              </a>
-            </Button>
           </div>
         </div>
       </Section>
