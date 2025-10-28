@@ -99,7 +99,8 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-brand-red mt-0.5 flex-shrink-0" />
                 <div className="text-brand-gray-light">
-                  <div>Findeco House, 10th Floor</div>
+                  <div>Plot No. 156A Washama Road</div>
+                  <div>Villa Elisabeth</div>
                   <div>Lusaka, Zambia</div>
                 </div>
               </div>
