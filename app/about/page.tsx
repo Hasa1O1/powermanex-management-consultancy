@@ -257,6 +257,33 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      {/* Client Roster */}
+      <Section className="bg-gray-50" id="clients">
+        <SectionHeading 
+          title="Our Client Roster" 
+          subtitle="Trusted by businesses across Zambia since our establishment"
+          centered
+        />
+        
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 opacity-60">
+          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
+            <span className="text-sm font-medium text-brand-gray">DALINEYA SOLUTIONS LTD</span>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
+            <span className="text-sm font-medium text-brand-gray">PLANTER'S SHELTER</span>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
+            <span className="text-sm font-medium text-brand-gray">G.C.S FINANCIAL</span>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
+            <span className="text-sm font-medium text-brand-gray">DOBLEXIL DEALERS</span>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
+            <span className="text-sm font-medium text-brand-gray">IGROW FARM</span>
+          </div>
+        </div>
+      </Section>
+
       {/* CTA Section */}
       <Section className="bg-brand-black text-brand-white">
         <div className="max-w-4xl mx-auto text-center">

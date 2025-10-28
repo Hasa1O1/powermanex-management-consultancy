@@ -2,9 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Section, SectionHeading, SectionLarge } from '@/components/ui/section'
-import { CTABand } from '@/components/ui/cta-band'
-import { Stat } from '@/components/ui/stat'
+import { Section, SectionHeading } from '@/components/ui/section'
 import { Badge } from '@/components/ui/badge'
 import { 
   Users, 
@@ -133,13 +131,6 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Employment Contracts</li>
-                <li>• Warning Letters & Disciplinary Documents</li>
-                <li>• HR Policies & Procedures</li>
-                <li>• Code of Conduct</li>
-                <li>• Ministry of Labour Attested</li>
-              </ul>
               <Button asChild variant="link" className="mt-4 p-0">
                 <Link href="/services#legal-hr-documents">Learn More →</Link>
               </Button>
@@ -157,13 +148,6 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Grievance Resolution</li>
-                <li>• Conflict Mediation</li>
-                <li>• Legal Compliance</li>
-                <li>• Dispute Documentation</li>
-                <li>• Professional Representation</li>
-              </ul>
               <Button asChild variant="link" className="mt-4 p-0">
                 <Link href="/services#labour-mediation">Learn More →</Link>
               </Button>
@@ -181,13 +165,6 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Thorough Background Checks</li>
-                <li>• Skill Verification</li>
-                <li>• No Hidden Fees</li>
-                <li>• Transparent Pricing</li>
-                <li>• Quality Candidates Guaranteed</li>
-              </ul>
               <Button asChild variant="link" className="mt-4 p-0">
                 <Link href="/services#employee-sourcing">Learn More →</Link>
               </Button>
@@ -205,13 +182,6 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Compliance Training</li>
-                <li>• Performance Management</li>
-                <li>• HR Systems Implementation</li>
-                <li>• Leadership Development</li>
-                <li>• On-site or Remote Delivery</li>
-              </ul>
               <Button asChild variant="link" className="mt-4 p-0">
                 <Link href="/services#workplace-training">Learn More →</Link>
               </Button>
@@ -229,13 +199,6 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Pre-Inspection Audit</li>
-                <li>• Document Preparation</li>
-                <li>• During Inspection Support</li>
-                <li>• Post-Inspection Follow-up</li>
-                <li>• Zero Penalties Guarantee</li>
-              </ul>
               <Button asChild variant="link" className="mt-4 p-0">
                 <Link href="/services#inspection-support">Learn More →</Link>
               </Button>
@@ -253,13 +216,6 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-brand-gray">
-                <li>• Complete Application Handling</li>
-                <li>• Fast Processing Times</li>
-                <li>• Renewal Services</li>
-                <li>• Error-Free Submissions</li>
-                <li>• All Permit Types</li>
-              </ul>
               <Button asChild variant="link" className="mt-4 p-0">
                 <Link href="/services#work-permits">Learn More →</Link>
               </Button>
@@ -350,59 +306,6 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Client Roster */}
-      <Section id="clients">
-        <SectionHeading 
-          title="Our Client Roster" 
-          subtitle="Trusted by businesses across Zambia since our establishment"
-          centered
-        />
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 opacity-60">
-          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
-            <span className="text-sm font-medium text-brand-gray">DALINEYA SOLUTIONS LTD</span>
-          </div>
-          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
-            <span className="text-sm font-medium text-brand-gray">PLANTER'S SHELTER</span>
-          </div>
-          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
-            <span className="text-sm font-medium text-brand-gray">G.C.S FINANCIAL</span>
-          </div>
-          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
-            <span className="text-sm font-medium text-brand-gray">DOBLEXIL DEALERS</span>
-          </div>
-          <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
-            <span className="text-sm font-medium text-brand-gray">IGROW FARM</span>
-          </div>
-        </div>
-      </Section>
-
-      {/* Testimonial */}
-      <Section className="bg-brand-black text-brand-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <blockquote className="text-2xl lg:text-3xl font-medium italic mb-8">
-            "We are managers. Let us take care of the details so you can focus on your core priorities."
-          </blockquote>
-          <div className="text-brand-gray-light">
-            <div className="font-semibold text-brand-white">Adson Sakala</div>
-            <div>CEO, Power'manex Management Consultancy</div>
-          </div>
-        </div>
-      </Section>
-
-      {/* CTA Band */}
-      <CTABand
-        title="Power Your Business with Peace of Mind"
-        description="Power'manex ensures compliance, smooth operations, and stress-free inspections so you can focus on growing your business."
-        primaryAction={{
-          text: "Get Started Today",
-          href: "/contact"
-        }}
-        secondaryAction={{
-          text: "View Our Services",
-          href: "/services"
-        }}
-      />
     </>
   )
 }
