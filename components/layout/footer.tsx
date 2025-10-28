@@ -98,11 +98,16 @@ export default function Footer() {
               
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-brand-red mt-0.5 flex-shrink-0" />
-                <div className="text-brand-gray-light">
+                <a 
+                  href="https://maps.app.goo.gl/6FBWTciXxzhiMieZ9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-brand-gray-light hover:text-brand-white transition-colors"
+                >
                   <div>Plot No. 156A Washama Road</div>
                   <div>Villa Elisabeth</div>
                   <div>Lusaka, Zambia</div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
