@@ -22,11 +22,15 @@ export function createWhatsAppLink(phone: string, message?: string): string {
 }
 
 export function createMailtoLink(email: string, subject?: string, body?: string): string {
-  const params = new URLSearchParams()
-  if (subject) params.append('subject', subject)
-  if (body) params.append('body', body)
+  const params: string[] = []
+  if (subject) {
+    params.push(`subject=${encodeURIComponent(subject)}`)
+  }
+  if (body) {
+    params.push(`body=${encodeURIComponent(body)}`)
+  }
   
-  const queryString = params.toString()
+  const queryString = params.join('&')
   return queryString ? `mailto:${email}?${queryString}` : `mailto:${email}`
 }
 
