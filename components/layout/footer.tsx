@@ -38,11 +38,12 @@ export default function Footer() {
                   WhatsApp Us
                 </a>
               </Button>
-              <Button asChild variant="outline" className="border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black">
-                <a href={mailtoLink}>
-                  Email Us
-                </a>
-              </Button>
+              <a 
+                href={mailtoLink}
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-12 px-8 py-3 border border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black focus-visible:ring-brand-white"
+              >
+                Email Us
+              </a>
             </div>
           </div>
 
