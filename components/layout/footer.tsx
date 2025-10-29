@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react'
@@ -33,14 +35,15 @@ export default function Footer() {
             
             {/* Contact Methods */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild variant="secondary" className="bg-brand-white text-brand-black hover:bg-brand-gray-light">
+              <Button asChild variant="secondary" className="bg-brand-white text-brand-black hover:bg-brand-gray-light w-full sm:w-auto">
                 <a href={createWhatsAppLink('+260973737563', "Hello! I'm interested in Power'manex services.")}>
                   WhatsApp Us
                 </a>
               </Button>
               <a 
                 href={mailtoLink}
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-12 px-8 py-3 border border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black focus-visible:ring-brand-white"
+                className="w-full sm:w-auto inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-12 px-8 py-3 border border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black focus-visible:ring-brand-white cursor-pointer"
+                style={{ pointerEvents: 'auto', textDecoration: 'none' }}
               >
                 Email Us
               </a>
@@ -95,7 +98,8 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-brand-red mt-0.5 flex-shrink-0" />
                 <a 
                   href={mailtoLink}
-                  className="text-brand-gray-light hover:text-brand-white transition-colors"
+                  className="text-brand-gray-light hover:text-brand-white transition-colors cursor-pointer break-all"
+                  style={{ pointerEvents: 'auto' }}
                 >
                   powermanex31@gmail.com
                 </a>
