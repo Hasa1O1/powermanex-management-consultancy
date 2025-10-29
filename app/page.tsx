@@ -50,7 +50,7 @@ export default function HomePage() {
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button asChild size="lg" className="text-lg px-8 py-4">
-                  <Link href="#contact">Get Started</Link>
+                  <Link href="/contact">Get Started</Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg" className="text-lg px-8 py-4">
                   <Link href="/services">View Services</Link>

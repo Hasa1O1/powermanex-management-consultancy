@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { createWhatsAppLink } from '@/lib/utils'
+import { createWhatsAppLink, createMailtoLink } from '@/lib/utils'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -35,7 +35,11 @@ export default function Footer() {
                 </a>
               </Button>
               <Button asChild variant="outline" className="border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black">
-                <a href="mailto:powermanex31@gmail.com?subject=Inquiry about Powermanex Services">
+                <a href={createMailtoLink(
+                  'powermanex31@gmail.com',
+                  "Inquiry about Power'manex Services",
+                  "Hello,\n\nI'm interested in learning more about your services.\n\nThank you."
+                )}>
                   Email Us
                 </a>
               </Button>
@@ -89,7 +93,11 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-brand-red mt-0.5 flex-shrink-0" />
                 <a 
-                  href="mailto:powermanex31@gmail.com"
+                  href={createMailtoLink(
+                    'powermanex31@gmail.com',
+                    "Inquiry about Power'manex Services",
+                    "Hello,\n\nI'm interested in learning more about your services.\n\nThank you."
+                  )}
                   className="text-brand-gray-light hover:text-brand-white transition-colors"
                 >
                   powermanex31@gmail.com

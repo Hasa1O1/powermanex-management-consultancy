@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Section, SectionHeading, SectionLarge } from '@/components/ui/section'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -237,8 +238,14 @@ export default function AboutPage() {
           <Card>
             <CardContent className="p-8">
               <div className="text-center">
-                <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Users className="w-16 h-16 text-brand-gray" />
+                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden relative">
+                  <Image
+                    src="/CEO Photo.png"
+                    alt="Adson Sakala - Chief Executive Officer"
+                    width={128}
+                    height={128}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">Adson Sakala</h3>
                 <p className="text-brand-red font-medium mb-4">Chief Executive Officer</p>
@@ -280,27 +287,6 @@ export default function AboutPage() {
           </div>
           <div className="bg-gray-100 rounded-lg p-6 h-24 flex items-center justify-center">
             <span className="text-sm font-medium text-brand-gray">IGROW FARM</span>
-          </div>
-        </div>
-      </Section>
-
-      {/* CTA Section */}
-      <Section className="bg-brand-black text-brand-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-6">
-            Ready to Work Together?
-          </h2>
-          <p className="text-xl text-brand-gray-light mb-8">
-            Let&apos;s discuss how Power&apos;manex can help your business achieve its goals 
-            with our comprehensive management solutions.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-brand-white text-brand-black hover:bg-brand-gray-light">
-              <Link href="/contact">Get Started Today</Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <Link href="/services">Explore Services</Link>
-            </Button>
           </div>
         </div>
       </Section>
