@@ -57,7 +57,12 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-brand-gray">
               <Phone className="w-4 h-4" />
-              <span>+260 97 3737563</span>
+              <a 
+                href="tel:+260973737563"
+                className="hover:text-brand-red transition-colors"
+              >
+                +260 97 3737563
+              </a>
             </div>
             <Button asChild>
               <Link href="/contact">Get Started</Link>
